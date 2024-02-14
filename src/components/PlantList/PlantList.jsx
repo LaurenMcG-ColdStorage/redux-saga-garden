@@ -12,13 +12,14 @@ function PlantList() {
     };
 
     useEffect(() => {
-        getPlants()
+        getPlants();
         // dispatch an action to request the plantList from the API
     }, []); 
 
     return (
         <div>
             <h3>This is the plant list</h3>
+            
             <pre>{JSON.stringify(reduxState)}</pre>
         </div>
     );
